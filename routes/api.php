@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\PostController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -27,7 +28,7 @@ Route::post('/register', [UserController::class, 'store']);
 
 Route::post('/logout', [UserController::class, 'logout']);
 
-Route::post('/uploadImage', [PostController::class, 'uploadImage']);
+Route::post('/uploadImage', [ImageController::class, 'uploadImage']);
 
 Route::post('/posts', [PostController::class, 'create']);
 

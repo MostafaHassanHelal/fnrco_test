@@ -14,15 +14,15 @@ class Post extends Model
         'description',
         'tag_id',
     ];
-
+    
     public function albums()
     {
-        return $this->morphMany(Album::class,'model');
+        return $this->morphMany(Album::class, 'model');
     }
 
     public function user()
     {
-        return $this->hasOne(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function tags()
@@ -34,7 +34,7 @@ class Post extends Model
     {
         return $this->hasMany(Comment::class);
     }
-    
+
     public function likes()
     {
         return $this->hasMany(Like::class);

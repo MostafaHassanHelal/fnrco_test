@@ -12,5 +12,4 @@ class Album extends Model
         'model_id',
         'model_type',
     ];
-
 }
