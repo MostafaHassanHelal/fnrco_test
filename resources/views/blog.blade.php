@@ -34,9 +34,9 @@
 			<input id="login_email" class="form-control mr-sm-2" type="text" placeholder="Email" aria-label="Email" required>
 			<input id="login_password" class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password" required>
 			<button onclick="login()" class="btn btn-outline-success my-2 my-sm-0">Login</button>
-			<button onclick="logout()" class="btn btn-outline-success my-2 my-sm-0">Register</button>
+			<button onclick="location.href='/register';" class="btn btn-outline-success my-2 my-sm-0">Register</button>
 			@else
-			<button onclick="location.href='/';" class="btn btn-outline-success my-2 my-sm-0">Logout</button>
+			<button onclick="logout()" class="btn btn-outline-success my-2 my-sm-0">Logout</button>
 			@endif
 		</div>
 
